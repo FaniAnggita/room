@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <!--   1. Komponen recyclerview untuk membuat list semua catatan
+           2. android:layout_width="match_parent" dan   android:layout_height="match_parent" untuk mengatur lebar dan tinggi elemen berdasrkan id lain
+           3. tools:listitem="@layout/item_catatan" untuk menampilkan list itam dari file layout item_catatan -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/catatanRV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        tools:listitem="@layout/item_catatan" />
+
+    <!-- 1. Ini adalah Tombol untuk membuat catatan baru
+         2. android:layout_width="wrap_content" dan   android:layout_height="wrap_content" untuk mengatur lebar dan tinggi elemen berdasarkan konten di dalamnya.
+         3. android:src="@drawable/ic_add" untuk embed icon dari direktori drawable
+         3.  app:backgroundTint="@color/dark_blue_shade" untuk set warna background-->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnTambah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="177dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/tombol_simpan"
+        android:src="@drawable/ic_baseline_add_24"
+        app:backgroundTint="@color/dark_blue_shade"
+        app:tint="@color/white"
+        tools:ignore="SpeakableTextPresentCheck" />
+</RelativeLayout>

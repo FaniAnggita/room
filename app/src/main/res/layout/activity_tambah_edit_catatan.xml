@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".TambahEditCatatan">
+
+<!--   1. EditText ini untuk menulis judul catatan-->
+    <EditText
+        android:id="@+id/idJudulCatatan"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:autofillHints=""
+        android:background="@color/dark_blue_shade"
+        android:hint="@string/judul_catatan"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        tools:ignore="TextFields" />
+
+    <!--EditText untuk menulis dekripsi catatan-->
+    <EditText
+        android:id="@+id/idEditDeskripsi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/idBtn"
+        android:layout_below="@id/idJudulCatatan"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:autofillHints=""
+        android:background="@color/purple_200"
+        android:gravity="start|top"
+        android:hint="@string/tulis_catatan"
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        android:singleLine="false"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        tools:ignore="TextContrastCheck" />
+
+<!--  Tombol untuk menyimpan catatan baru atau hasil update-->
+    <Button
+        android:id="@+id/idBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/dark_blue_shade"
+        android:text="@string/simpan_catatan"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

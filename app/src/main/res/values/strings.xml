@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Sticky Notes</string>
+    <string name="tombol_simpan">tombol simpan</string>
+    <string name="judul_catatan">Judul Catatan</string>
+    <string name="tulis_catatan">Tulis catatan...</string>
+    <string name="simpan_catatan">Simpan Catatan</string>
+    <string name="catatan">Catatan</string>
+    <string name="delete">delete</string>
+    <string name="diperbarui">diperbarui</string>
+</resources>
